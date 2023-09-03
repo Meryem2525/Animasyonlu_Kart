@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color:rgb(101, 90, 90);
+}
+
+.container{
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.kart{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 20px 60px 60px;
+    transition: 0.5s;
+}
+
+
+.kart .img{
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.kart .img img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.kart:hover .img img{
+    opacity: 0.2;
+}
+.kart .icerik{
+    position: absolute;
+    width: 80%;
+    right: 10%;
+    bottom: 20px;
+    height:70px;
+    background-color: rgb(138, 164, 186);
+    border-radius: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.kart:hover .icerik{
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.kart .icerik h2{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+}
+.kart .icerik p{
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1em;
+    transition: 0.5s;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.kart:hover .icerik p{
+    opacity:1 ;
+    margin-top:10%;
+}
+
+
+
+
+
+
+
